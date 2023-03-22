@@ -1,21 +1,20 @@
 import React from "react";
 import { useState } from "react";
+import Counter from "./components/Counter";
+import PostItem from "./components/PostItem";
+import PostList from "./components/PostList";
+import "./styles/style.css";
 
 function App() {
-  const [likes, setLikes] = useState(2);
+  const [posts, setPosts] = useState([
+    { id: "1", title: "заголовок 1", description: "description 1" },
+    { id: "2", title: "заголовок 2", description: "description 2" },
+    { id: "3", title: "заголовок 3", description: "description 3" },
+  ]);
 
-  function increment() {
-    setLikes(likes + 1);
-  }
-
-  function decrement() {
-    setLikes(likes - 1);
-  }
   return (
     <div className="App">
-      <h1>{likes}</h1>
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
+      <PostList posts={posts} title={"Список 1"} />
     </div>
   );
 }
