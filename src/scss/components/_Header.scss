@@ -60,4 +60,45 @@
 }
 
 .header__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  background: #ffc85e;
+  border-radius: 79px;
+  height: 59px;
+}
+.header__btn--catalog {
+  width: 192px;
+}
+.header__btn--price {
+  width: 200px;
+}
+
+.header__search {
+}
+
+.search__image {
+  background: #ffc85e;
+
+  border-radius: 100%;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  &__left {
+  }
+  &__right {
+  }
+}
+
+.header__contacts {
+}
+.header-contacts {
+}
+.header-contacts__left {
+}
+.header-contacts__right {
 }
