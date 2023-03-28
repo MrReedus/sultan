@@ -1,3 +1,5 @@
+$backgroundBtn: #ffc85e;
+
 .header__container {
 }
 .header__top {
@@ -61,13 +63,24 @@
 
 .header__bottom {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header__btn {
-  background: #ffc85e;
+  background: $backgroundBtn;
   border-radius: 79px;
   height: 59px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  line-height: 17px;
+  transition: background 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background: lighten($backgroundBtn, 6);
+  }
 }
 .header__btn--catalog {
   width: 192px;
@@ -77,12 +90,28 @@
 }
 
 .header__search {
+  width: 263px;
+  height: 59px;
+  background: #ededed;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  input {
+    border: none;
+    outline: none;
+    padding: 20px;
+    background: transparent;
+  }
 }
 
 .search__image {
-  background: #ffc85e;
-
+  background: $backgroundBtn;
   border-radius: 100%;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-contacts {
