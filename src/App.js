@@ -1,4 +1,5 @@
 import React from "react";
+import Categories from "./components/Categories";
 
 import Header from "./components/Header";
 import Sort from "./components/Sort";
@@ -16,8 +17,15 @@ function App() {
         <Header />
 
         <main className="main">
-          <h1>Косметика и гигиена</h1>
-          <Sort />
+          <section className="catalog">
+            <div className="catalog__container">
+              <div class="catalog__header">
+                <h1 className="catalog__title">Косметика и гигиена</h1>
+                <Sort />
+              </div>
+              <Categories />
+            </div>
+          </section>
         </main>
         <footer className="footer"></footer>
       </div>

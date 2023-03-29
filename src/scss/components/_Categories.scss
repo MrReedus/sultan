@@ -1,0 +1,38 @@
+.categories {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      height: 70px;
+      max-width: 140px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #3f4e65;
+      cursor: pointer;
+      background-color: #fefefe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease;
+      &:hover,
+      &:focus {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 8%);
+      }
+
+      &.active {
+        border: 1px solid #3f4e65;
+      }
+      a {
+        padding: 12.6% 19% 12.6% 19%;
+      }
+    }
+  }
+}

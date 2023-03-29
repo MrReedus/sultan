@@ -3,7 +3,7 @@ import React from "react";
 function Sort() {
   const [isVisible, setIsVisible] = React.useState(false);
   const [selected, setSelected] = React.useState(0);
-  const list = ["название", "цена"];
+  const list = ["Название", "Цена"];
 
   const onClickSelect = (index) => {
     setSelected(index);
@@ -15,7 +15,7 @@ function Sort() {
   return (
     <div className="sort">
       <div className="sort__label">
-        <b>Сортировка:</b>
+        <b>Сортировка: </b>
         <span onClick={() => setIsVisible(!isVisible)}>{sortName}</span>
         <svg
           className="sort-icon"
