@@ -6,10 +6,6 @@ function Categories() {
     setActiveIndex(index);
   };
 
-  <li onClick={() => onClickCategory(0)} className={activeIndex === 0 ? "active" : ""}>
-    все
-  </li>;
-
   const categories = [
     "Уход за телом",
     "Уход за руками",
