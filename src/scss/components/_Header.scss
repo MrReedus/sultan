@@ -88,20 +88,25 @@ $backgroundBtn: #ffc85e;
 .header__btn--price {
   width: 200px;
 }
-
-.header__search {
-  width: 263px;
+.search {
   height: 59px;
   background: #ededed;
   border-radius: 36px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   input {
     border: none;
     outline: none;
-    padding: 20px;
     background: transparent;
+  }
+}
+.header__search {
+  width: 263px;
+  padding-right: 10px;
+  input {
+    padding: 20px 0px 20px 20px;
   }
 }
 
@@ -122,13 +127,4 @@ $backgroundBtn: #ffc85e;
   }
   &__right {
   }
-}
-
-.header__contacts {
-}
-.header-contacts {
-}
-.header-contacts__left {
-}
-.header-contacts__right {
 }

@@ -1,8 +1,9 @@
 import React from "react";
-import Categories from "./components/Categories";
 
+import Categories from "./components/Categories";
 import Header from "./components/Header";
 import Sort from "./components/Sort";
+import Filter from "./components/Filter";
 import ProductBlock from "./components/ProductBlock";
 
 import products from "./assets/products.json";
@@ -27,13 +28,15 @@ function App() {
               <div class="catalog__header">
                 <h1 className="catalog__title">Косметика и гигиена</h1>
                 <Sort />
-                <div className="content__items"></div>
               </div>
               <Categories />
-              <div class="catalog__items products">
-                {products.map((obj) => (
-                  <ProductBlock {...obj} />
-                ))}
+              <div class="flex-wrapper">
+                <Filter />
+                <div class="catalog__items products">
+                  {products.map((obj) => (
+                    <ProductBlock {...obj} />
+                  ))}
+                </div>
               </div>
             </div>
           </section>
