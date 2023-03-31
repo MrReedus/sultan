@@ -39,8 +39,9 @@
 .product-card__title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 130%;
-  margin-bottom: 20px;
+  line-height: 118%;
+
+  height: 60px;
 }
 
 .product-card__bottom {
@@ -59,7 +60,7 @@
   border-radius: 80px;
   width: 153px;
   height: 45px;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -79,6 +80,7 @@
   &:hover,
   &:focus {
     background: lighten($backgroundBtn, 6);
+    transform: translateY(-1px);
     svg {
       transform: translateX(2px);
     }

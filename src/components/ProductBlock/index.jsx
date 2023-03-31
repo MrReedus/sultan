@@ -1,29 +1,29 @@
 import React from "react";
 
-function ProductBlock({ title, price, imageUrl, sizes, types }) {
+function ProductBlock({ title, description, price, imageUrl, brand, manufacturer, size, barcode }) {
   return (
     <div class="products__item product-card">
       <div class="product-card__image">
-        <img src="https://avatars.mds.yandex.net/get-mpic/5275484/img_id3311665198945618775.jpeg/orig" alt="" />
+        <img src={imageUrl} alt="" />
       </div>
-      <span class="product-card__size">450 мл</span>
+      <span class="product-card__size">{size}</span>
       <h2 class="product-card__title">
-        <b>AOS</b> средство для мытья посуды Crystal
+        <b>{title}</b> <span>{description}</span>
       </h2>
       <div class="product-card__subtitles">
         <span>
-          Штрихкод<b>4604049097548</b>
+          Штрихкод<b>{barcode}</b>
         </span>
         <span>
-          Производитель:<b>Нэфис</b>
+          Производитель:<b>{manufacturer}</b>
         </span>
         <span>
-          Бренд:<b>AOS</b>
+          Бренд:<b>{brand}</b>
         </span>
       </div>
 
       <div class="product-card__bottom">
-        <span class="product-card__price">100 ₸</span>
+        <span class="product-card__price">{price} ₸</span>
         <button class="product-card__button">
           <span>В корзину</span>
           <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">

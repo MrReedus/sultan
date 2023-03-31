@@ -31,9 +31,9 @@ function App() {
               </div>
               <Categories />
               <div class="catalog__items products">
-                <ProductBlock />
-                <ProductBlock />
-                <ProductBlock />
+                {products.map((obj) => (
+                  <ProductBlock {...obj} />
+                ))}
               </div>
             </div>
           </section>
