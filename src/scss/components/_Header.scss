@@ -1,7 +1,5 @@
 $backgroundBtn: #ffc85e;
 
-.header__container {
-}
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -45,18 +43,11 @@ $backgroundBtn: #ffc85e;
   margin-right: 15px;
 }
 
-.header__navigation {
-}
-.navigation {
-}
-.navigation__body {
-}
 .menu {
   display: flex;
   gap: 20px;
 }
-.menu__item {
-}
+
 .menu__link {
   color: #3f4e65;
 }
@@ -126,5 +117,46 @@ $backgroundBtn: #ffc85e;
   &__left {
   }
   &__right {
+  }
+}
+
+.cart {
+  display: flex;
+}
+
+.cart__icon {
+  position: relative;
+  margin-right: 14px;
+}
+
+.cart__counter {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  background-color: $backgroundBtn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cart__right-block {
+  span {
+    display: block;
+  }
+  .cart__title {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3f4e65;
+  }
+  .cart__sum {
+    font-weight: 600;
+    line-height: 150%;
+    color: #111111;
   }
 }

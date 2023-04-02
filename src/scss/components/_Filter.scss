@@ -80,6 +80,7 @@
 .filter-buttons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
   button {
     width: 160px;
     height: 59px;
@@ -103,6 +104,37 @@
     &:hover,
     &:focus {
       background: lighten($backgroundBtn, 6);
+    }
+  }
+}
+
+.filter__categories {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+
+    li {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #3f4e65;
+      cursor: pointer;
+      display: flex;
+      transition: 0.2s ease;
+      &:hover,
+      &:focus {
+        color: darken(#a6acb6, 8%);
+      }
+
+      &:active {
+        color: darken($backgroundBtn, 8%);
+      }
+
+      &.active {
+        color: green;
+      }
     }
   }
 }

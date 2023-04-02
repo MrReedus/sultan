@@ -1,5 +1,6 @@
 import React from "react";
 import SearchLogo from "../assets/images/search.png";
+import Categories from "./Categories";
 
 function Filter() {
   return (
@@ -99,6 +100,9 @@ function Filter() {
             />
           </svg>
         </a>
+      </div>
+      <div class="filter__categories">
+        <Categories />
       </div>
     </aside>
   );

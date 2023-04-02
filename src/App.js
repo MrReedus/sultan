@@ -21,7 +21,6 @@ function App() {
     <>
       <div className="wrapper">
         <Header />
-
         <main className="main">
           <section className="catalog">
             <div className="catalog__container">
@@ -29,7 +28,10 @@ function App() {
                 <h1 className="catalog__title">Косметика и гигиена</h1>
                 <Sort />
               </div>
-              <Categories />
+              <div className="categories">
+                <Categories />
+              </div>
+
               <div class="flex-wrapper">
                 <Filter />
                 <div class="catalog__items products">

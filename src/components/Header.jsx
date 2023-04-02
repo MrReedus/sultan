@@ -5,6 +5,8 @@ import logo from "../assets/images/logo.png";
 import avatar from "../assets/images/operator.png";
 import search from "../assets/images/search.png";
 
+import HeaderCart from "./HeaderCart";
+
 function Header() {
   return (
     <header className="header">
@@ -72,6 +74,7 @@ function Header() {
             </div>
           </div>
           <button className="header__btn header__btn--price">Прайс-лист</button>
+          <HeaderCart />
         </div>
       </div>
     </header>
