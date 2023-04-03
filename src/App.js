@@ -7,10 +7,10 @@ import Filter from "./components/Filter";
 import ProductBlock from "./components/ProductBlock";
 
 import products from "./assets/products.json";
+import Pagination from "./components/Pagination";
 
 import "./scss/app.scss";
 
-console.log(products);
 function App() {
   const [isVisible, setIsVisible] = React.useState(false);
   const [selected, setSelected] = React.useState(0);
@@ -40,10 +40,13 @@ function App() {
                   ))}
                 </div>
               </div>
+              <Pagination />
             </div>
           </section>
         </main>
-        <footer className="footer"></footer>
+        <footer className="footer">
+          <div class="footer__container"></div>
+        </footer>
       </div>
     </>
   );

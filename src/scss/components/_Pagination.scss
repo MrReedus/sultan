@@ -1,0 +1,36 @@
+.pagination {
+}
+
+.pagination__container {
+  display: flex;
+  width: 234px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-body {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 21px;
+    a {
+      font-weight: 500;
+      color: #3f4e65;
+    }
+    &.current {
+      background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+      border-radius: 100%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 9px;
+    }
+    &:hover,
+    &:focus {
+      // text-decoration: underline;
+    }
+  }
+}
