@@ -57,8 +57,7 @@ $backgroundBtn: #ffc85e;
   justify-content: space-between;
   align-items: center;
 }
-
-.header__btn {
+.btn {
   background: $backgroundBtn;
   border-radius: 79px;
   height: 59px;
@@ -67,11 +66,23 @@ $backgroundBtn: #ffc85e;
   font-weight: 700;
   line-height: 17px;
   transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  svg {
+    transition: transform 0.3s ease;
+  }
 
   &:hover,
   &:focus {
     background: lighten($backgroundBtn, 6);
+    svg {
+      transform: translateY(2px);
+    }
   }
+}
+.header__btn {
 }
 .header__btn--catalog {
   width: 192px;
@@ -109,14 +120,14 @@ $backgroundBtn: #ffc85e;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .header-contacts {
   display: flex;
   align-items: center;
-  &__left {
-  }
-  &__right {
+  a {
+    color: #3f4e65;
   }
 }
 

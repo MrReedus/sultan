@@ -8,6 +8,7 @@ import ProductBlock from "./components/ProductBlock";
 
 import products from "./assets/products.json";
 import Pagination from "./components/Pagination";
+import Footer from "./components/Footer";
 
 import "./scss/app.scss";
 
@@ -41,12 +42,16 @@ function App() {
                 </div>
               </div>
               <Pagination />
+              <p className="catalog__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis
+                iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed
+                pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper
+                enim, malesuada.
+              </p>
             </div>
           </section>
         </main>
-        <footer className="footer">
-          <div class="footer__container"></div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
